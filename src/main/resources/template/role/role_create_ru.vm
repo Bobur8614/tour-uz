@@ -1,0 +1,7 @@
+#set ($roleName = '')
+#if($role.nameRu)
+    #set ($roleName = $role.nameRu)
+#elseif($role.name)
+    #set ($roleName = $role.name)
+#end
+${roleName} роль создан в ${createdAt}

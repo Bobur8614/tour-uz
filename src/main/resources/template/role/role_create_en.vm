@@ -1,0 +1,7 @@
+#set ($roleName = '')
+#if($role.nameEn)
+    #set ($roleName = $role.nameEn)
+#elseif($role.name)
+    #set ($roleName = $role.name)
+#end
+${roleName} role created at ${createdAt}

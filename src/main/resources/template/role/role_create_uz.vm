@@ -1,0 +1,7 @@
+#set ($roleName = '')
+#if($role.nameUz)
+    #set ($roleName = $role.nameUz)
+#elseif($role.name)
+    #set ($roleName = $role.name)
+#end
+${roleName} rol yaratildi ${createdAt}
